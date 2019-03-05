@@ -1,8 +1,8 @@
-$(document).ready(function() {
+$(document).ready(function () {
 
-//make an array of defaults
-    var movies = ["terminator", "strange brew", "die hard", "pee wee herman", "star wars"];
-    
+    //make an array of defaults
+    var movies = ["terminator", "strange brew", "die hard", "pee wee herman", "star wars", "andre the giant", "david hasslehoff"];
+    console.log(movies);
     //Function to display array as buttons
     function getButtons() {
         $("#buttonSpace").empty();
@@ -15,13 +15,16 @@ $(document).ready(function() {
             $("#buttonSpace").append(movieButton);
         }
     }
-    getButtons();
 
     //function to push user keyword into array
-
-    //Function to display gifs
-
-
-
-
+    function newButton() {
+        $("#btnMovie").on("click", function () {
+            event.preventDefault()
+            var userMovie = $("#txtMovie").val().trim();
+            movies.push(userMovie);
+            getButtons();
+        });
+    }
+    getButtons();
+    newButton();
 });
