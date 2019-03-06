@@ -1,0 +1,28 @@
+/* Global Styles */
+
+    .row {
+        margin-bottom: 20px;
+    }
+
+    .card {
+        float: left;
+        margin: 20px;
+    }
+
+    .card-img-top {
+        width: 80%;
+        height: 10vw;
+        object-fit: cover;
+    }
+
+    /* card text */
+
+    .card-text {
+        font-weight: bold;
+        padding: 10px;
+        font-size: 22px;
+    }
+
+    .btn {
+        margin: 3px;
+    }
