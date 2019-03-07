@@ -77,11 +77,10 @@ $(document).ready(function () {
     //click to animate the gifs
     $(document).on("click", ".image", function() {
         var currentState = $(this).attr('data-state');
-        if (currentState = 'still') {
-            $(this).attr('src', $(this).data("animate"));
+        if (currentState == 'still') {
+            $(this).attr('src', $(this).data('animate'));
             $(this).attr('data-state', 'animate');
-        }
-        else {
+        } else {
             $(this).attr('src', $(this).data('still'));
             $(this).attr('data-state', 'still');
         }
