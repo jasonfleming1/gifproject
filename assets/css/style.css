@@ -10,9 +10,9 @@
     }
 
     .card-img-top {
-        width: 80%;
-        height: 10vw;
-        object-fit: cover;
+        width: auto;
+        height: auto;
+        object-fit: none;
     }
 
     /* card text */
@@ -23,6 +23,36 @@
         font-size: 22px;
     }
 
+
     .btn {
         margin: 3px;
-    }
+        background-color: #007bff;
+        border: none;
+        color: white;
+        padding: 10px 20px;
+        text-align: center;
+        display: inline-block;
+        font-size: 16px;
+        margin-bottom: 20px;
+     }
+     
+     .btn:hover {
+        background: #ffff00;
+        color: #000000;
+        font-weight: bold;
+        border: none;
+        box-shadow: #343a40;
+     }
+     
+     .btn:focus {
+        background: #ffff00;
+        color: #000000;
+        font-weight: bold;
+        border: none;
+        box-shadow: #343a40;
+     }
+
+     .card {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        margin-bottom: 40px;
+     }
